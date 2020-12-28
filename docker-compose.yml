@@ -1,0 +1,20 @@
+version: "3.6" 
+
+services:
+  newman:
+    build: .
+    image: postman-checks
+    volumes:
+      - ./collections:/etc/newman
+    command: 
+      run "https://www.getpostman.com/collections/8a0c9bc08f062d12dcda"
+      -e environments/env.json
+      -r html,cli 
+      --reporter-html-export reports/testReports.html 
+      --reporter-html-template reports/templates/customTemplate.hbs
+    networks:
+      - xenet
+
+networks:
+  xenet:
+    external: true
