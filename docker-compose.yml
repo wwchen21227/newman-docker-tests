@@ -10,10 +10,18 @@ services:
       run "https://www.getpostman.com/collections/8a0c9bc08f062d12dcda"
       -e environments/env.json
       -r html,cli 
-      --reporter-html-export reports/testReports.html 
+      --reporter-html-export reports/testReports.html
       --reporter-html-template reports/templates/customTemplate.hbs
     networks:
       - xenet
+
+  lighttpd:
+    image: sebp/lighttpd
+    volumes:
+      - ./collections/reports:/var/www/localhost/htdocs/
+    ports:
+      - "8081:80"
+    tty: true
 
 networks:
   xenet:

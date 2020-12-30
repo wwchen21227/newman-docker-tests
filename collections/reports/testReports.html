@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Postman - Reports</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+        //custom script
+        $(function(){
+            $('.panel').filter(function(){ return $('.tego-bg-red', this).length})
+                    .find('.panel-heading')
+                    .removeClass('tego-bg-green')
+                    .addClass('tego-bg-red')
+        })
+  </script>
+    <style>
+        .tego-bg-red .panel-title, .tego-bg-green .panel-title {
+            color: #fff;
+        }
+        .tego-bg-red {
+            background-color: #e74c3c !important;
+        }
+        .tego-bg-green {
+            background-color: #27ae60 !important;
+        }
+        .tego-color-red {
+            color: #c0392b;
+            font-weight: bold;
+        }
+        .tego-color-green {
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+    <div class="row">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Test Run Information</div>
+        <div class="panel-body">
+            <div class="col-md-3">Collection</div><div class="col-md-9">newmanTest</div>
+            <div class="col-md-3">Environment</div><div class="col-md-9"></div>
+            <div class="col-md-3">Time of Run</div><div class="col-md-9">Wed Dec 30 2020 14:18:46 GMT+0000 (Coordinated Universal Time)</div>
+        </div>
+      </div>
+ 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Test Run Summary</div>
+        <div class="panel-body">
+                <div class="col-md-4">Iterations</div><div class="col-md-4">1</div><div class="col-md-4">0</div>
+                <div class="col-md-4">Requests</div><div class="col-md-4">4</div><div class="col-md-4">0</div>
+                <div class="col-md-4">Prerequest Scripts</div><div class="col-md-4">0</div><div class="col-md-4">0</div>
+                <div class="col-md-4">Test Scripts</div><div class="col-md-4">4</div><div class="col-md-4">0</div>
+                <div class="col-md-4">Assertions</div><div class="col-md-4">4</div><div class="col-md-4">0</div>
+
+                <div class="col-md-12">&nbsp;</div>
+                <div class="col-md-6">Total run duration</div><div class="col-md-2">2.3s</div>
+                <div class="col-md-6">Total data received</div><div class="col-md-2">2.04KB (approx)</div>
+                <div class="col-md-6">Average response time</div><div class="col-md-2">505ms</div>
+
+                <div class="col-md-12">&nbsp;</div>
+                <div class="col-md-3"><strong>Total Failures</strong></div><div class="col-md-2 "><strong>0</strong></div>
+                
+        </div>
+    </div>
+    </div>
+
+    <br/><strong><h2>Requests</h2></strong>
+
+                <div class="panel-group" id="collapse-request-34b418cd-2c05-49ee-b144-4ef7ddfff73c" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading tego-bg-green" role="tab" id="requestHead-34b418cd-2c05-49ee-b144-4ef7ddfff73c">
+                            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-34b418cd-2c05-49ee-b144-4ef7ddfff73c" aria-controls="collapseOne">GET with URL Params</a></h4>
+                        </div>
+        
+                        <div id="requestData-34b418cd-2c05-49ee-b144-4ef7ddfff73c" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-34b418cd-2c05-49ee-b144-4ef7ddfff73c">
+                            <div class="panel-body">
+                                        <div class="col-md-4">Description</div><div class="col-md-8" style="white-space: pre-wrap;">Simple GET request with URL Parameters</div>
+                                        <div class="col-md-12">&nbsp;</div>
+        
+                                    <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">GET</span></h4></div>
+                                    <div class="col-md-4">URL</div><div class="col-md-8"><a href="http://httpbin.org/get?lol&#x3D;true" target="_blank">http://httpbin.org/get?lol&#x3D;true</a></div>
+        
+                                <div class="col-md-12">&nbsp;</div>
+                                <div class="col-md-4">Mean time per request</div><div class="col-md-8">712ms</div><br/>
+                                <div class="col-md-4">Mean size per request</div><div class="col-md-8">436B</div><br/>
+        
+                                <div class="col-md-12">&nbsp;</div>
+                                <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+        
+                                <div class="col-md-12">&nbsp;</div>
+                                <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+        
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">{
+          &quot;args&quot;: {
+            &quot;lol&quot;: &quot;true&quot;
+          }, 
+          &quot;headers&quot;: {
+            &quot;Accept&quot;: &quot;*/*&quot;, 
+            &quot;Accept-Encoding&quot;: &quot;gzip, deflate, br&quot;, 
+            &quot;Cache-Control&quot;: &quot;no-cache&quot;, 
+            &quot;Host&quot;: &quot;httpbin.org&quot;, 
+            &quot;Postman-Token&quot;: &quot;c02c266f-7007-4879-bfaf-a256769a4758&quot;, 
+            &quot;User-Agent&quot;: &quot;PostmanRuntime/7.26.8&quot;, 
+            &quot;X-Amzn-Trace-Id&quot;: &quot;Root&#x3D;1-5fec8b19-7ea74dcb493efdc72441210f&quot;
+          }, 
+          &quot;origin&quot;: &quot;115.66.191.222&quot;, 
+          &quot;url&quot;: &quot;http://httpbin.org/get?lol&#x3D;true&quot;
+        }
+        </textarea></div><br/>
+                                    <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+        
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Tests</div>
+        
+                                    <div class="col-md-8">
+                                        <table class="table table-responsive table-condensed">
+                                            <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                            <tbody><tr><td>Response contains params</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                        </table>
+                                    </div><br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="collapse-request-92cbb9ca-d744-41cc-98d6-0cc520e79f1f" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading tego-bg-green" role="tab" id="requestHead-92cbb9ca-d744-41cc-98d6-0cc520e79f1f">
+                            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-92cbb9ca-d744-41cc-98d6-0cc520e79f1f" aria-controls="collapseOne">POST with JSON body</a></h4>
+                        </div>
+        
+                        <div id="requestData-92cbb9ca-d744-41cc-98d6-0cc520e79f1f" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-92cbb9ca-d744-41cc-98d6-0cc520e79f1f">
+                            <div class="panel-body">
+        
+                                    <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">POST</span></h4></div>
+                                    <div class="col-md-4">URL</div><div class="col-md-8"><a href="http://httpbin.org/post" target="_blank">http://httpbin.org/post</a></div>
+        
+                                <div class="col-md-12">&nbsp;</div>
+                                <div class="col-md-4">Mean time per request</div><div class="col-md-8">365ms</div><br/>
+                                <div class="col-md-4">Mean size per request</div><div class="col-md-8">598B</div><br/>
+        
+                                <div class="col-md-12">&nbsp;</div>
+                                <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+        
+                                <div class="col-md-12">&nbsp;</div>
+                                <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+        
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">{
+          &quot;args&quot;: {}, 
+          &quot;data&quot;: &quot;{\n    \&quot;something\&quot;: \&quot;cool\&quot;\n}&quot;, 
+          &quot;files&quot;: {}, 
+          &quot;form&quot;: {}, 
+          &quot;headers&quot;: {
+            &quot;Accept&quot;: &quot;*/*&quot;, 
+            &quot;Accept-Encoding&quot;: &quot;gzip, deflate, br&quot;, 
+            &quot;Cache-Control&quot;: &quot;no-cache&quot;, 
+            &quot;Content-Length&quot;: &quot;27&quot;, 
+            &quot;Content-Type&quot;: &quot;application/json&quot;, 
+            &quot;Host&quot;: &quot;httpbin.org&quot;, 
+            &quot;Postman-Token&quot;: &quot;87f7ad20-c906-49e4-8010-6286699c5189&quot;, 
+            &quot;User-Agent&quot;: &quot;PostmanRuntime/7.26.8&quot;, 
+            &quot;X-Amzn-Trace-Id&quot;: &quot;Root&#x3D;1-5fec8b1a-277a235c1e2726377312da45&quot;
+          }, 
+          &quot;json&quot;: {
+            &quot;something&quot;: &quot;cool&quot;
+          }, 
+          &quot;origin&quot;: &quot;115.66.191.222&quot;, 
+          &quot;url&quot;: &quot;http://httpbin.org/post&quot;
+        }
+        </textarea></div><br/>
+                                    <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+        
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Tests</div>
+        
+                                    <div class="col-md-8">
+                                        <table class="table table-responsive table-condensed">
+                                            <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                            <tbody><tr><td>Check POST param in response</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                        </table>
+                                    </div><br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="collapse-request-b75bf315-d8c1-4be9-89c6-20f62a5850ab" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading tego-bg-green" role="tab" id="requestHead-b75bf315-d8c1-4be9-89c6-20f62a5850ab">
+                            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-b75bf315-d8c1-4be9-89c6-20f62a5850ab" aria-controls="collapseOne">DELETE request</a></h4>
+                        </div>
+        
+                        <div id="requestData-b75bf315-d8c1-4be9-89c6-20f62a5850ab" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-b75bf315-d8c1-4be9-89c6-20f62a5850ab">
+                            <div class="panel-body">
+        
+                                    <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">DELETE</span></h4></div>
+                                    <div class="col-md-4">URL</div><div class="col-md-8"><a href="http://httpbin.org/delete" target="_blank">http://httpbin.org/delete</a></div>
+        
+                                <div class="col-md-12">&nbsp;</div>
+                                <div class="col-md-4">Mean time per request</div><div class="col-md-8">432ms</div><br/>
+                                <div class="col-md-4">Mean size per request</div><div class="col-md-8">472B</div><br/>
+        
+                                <div class="col-md-12">&nbsp;</div>
+                                <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+        
+                                <div class="col-md-12">&nbsp;</div>
+                                <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+        
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">{
+          &quot;args&quot;: {}, 
+          &quot;data&quot;: &quot;&quot;, 
+          &quot;files&quot;: {}, 
+          &quot;form&quot;: {}, 
+          &quot;headers&quot;: {
+            &quot;Accept&quot;: &quot;*/*&quot;, 
+            &quot;Accept-Encoding&quot;: &quot;gzip, deflate, br&quot;, 
+            &quot;Cache-Control&quot;: &quot;no-cache&quot;, 
+            &quot;Host&quot;: &quot;httpbin.org&quot;, 
+            &quot;Postman-Token&quot;: &quot;c22c2a5a-8675-46ab-9ad5-7f43a7de9116&quot;, 
+            &quot;User-Agent&quot;: &quot;PostmanRuntime/7.26.8&quot;, 
+            &quot;X-Amzn-Trace-Id&quot;: &quot;Root&#x3D;1-5fec8b1a-7169479d655301b52a9fe541&quot;
+          }, 
+          &quot;json&quot;: null, 
+          &quot;origin&quot;: &quot;115.66.191.222&quot;, 
+          &quot;url&quot;: &quot;http://httpbin.org/delete&quot;
+        }
+        </textarea></div><br/>
+                                    <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+        
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Tests</div>
+        
+                                    <div class="col-md-8">
+                                        <table class="table table-responsive table-condensed">
+                                            <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                            <tbody><tr><td>Status code is 200</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                        </table>
+                                    </div><br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="collapse-request-aebbb2e0-c061-417b-a286-5412c56d2160" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading tego-bg-green" role="tab" id="requestHead-aebbb2e0-c061-417b-a286-5412c56d2160">
+                            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#requestData-aebbb2e0-c061-417b-a286-5412c56d2160" aria-controls="collapseOne">PUT with form data</a></h4>
+                        </div>
+        
+                        <div id="requestData-aebbb2e0-c061-417b-a286-5412c56d2160" class="panel-collapse collapse" role="tabpanel" aria-labelledby="requestHead-aebbb2e0-c061-417b-a286-5412c56d2160">
+                            <div class="panel-body">
+        
+                                    <div class="col-md-4">Method</div><div class="col-md-8"><h4><span class="label label-success">PUT</span></h4></div>
+                                    <div class="col-md-4">URL</div><div class="col-md-8"><a href="http://httpbin.org/put" target="_blank">http://httpbin.org/put</a></div>
+        
+                                <div class="col-md-12">&nbsp;</div>
+                                <div class="col-md-4">Mean time per request</div><div class="col-md-8">513ms</div><br/>
+                                <div class="col-md-4">Mean size per request</div><div class="col-md-8">581B</div><br/>
+        
+                                <div class="col-md-12">&nbsp;</div>
+                                <br/><div class="col-md-4">Total passed tests</div><div class="total-passed col-md-8">1</div>
+                                <div class="col-md-4">Total failed tests</div><div class="total-failed col-md-8">0</div><br/>
+        
+                                <div class="col-md-12">&nbsp;</div>
+                                <br/><div class="col-md-4">Status code</div><div class="col-md-8">200</div><br/>
+        
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <br/><div class="col-md-4">Response body</div><div class="col-md-8"><textarea name="jsonData" disabled rows="8" cols="70" style="margin: 0px; width: 629px; height: 255px; font-size: 17px; color: green;">{
+          &quot;args&quot;: {}, 
+          &quot;data&quot;: &quot;&quot;, 
+          &quot;files&quot;: {}, 
+          &quot;form&quot;: {
+            &quot;quotient&quot;: &quot;223&quot;
+          }, 
+          &quot;headers&quot;: {
+            &quot;Accept&quot;: &quot;*/*&quot;, 
+            &quot;Accept-Encoding&quot;: &quot;gzip, deflate, br&quot;, 
+            &quot;Cache-Control&quot;: &quot;no-cache&quot;, 
+            &quot;Content-Length&quot;: &quot;12&quot;, 
+            &quot;Content-Type&quot;: &quot;application/x-www-form-urlencoded&quot;, 
+            &quot;Host&quot;: &quot;httpbin.org&quot;, 
+            &quot;Postman-Token&quot;: &quot;70bff03f-d718-4afd-9a32-cc5dd29c2410&quot;, 
+            &quot;User-Agent&quot;: &quot;PostmanRuntime/7.26.8&quot;, 
+            &quot;X-Amzn-Trace-Id&quot;: &quot;Root&#x3D;1-5fec8b1a-071ed21024306c1171bfa685&quot;
+          }, 
+          &quot;json&quot;: null, 
+          &quot;origin&quot;: &quot;115.66.191.222&quot;, 
+          &quot;url&quot;: &quot;http://httpbin.org/put&quot;
+        }
+        </textarea></div><br/>
+                                    <!-- <div><button type="button" class="btn btn-info" onclick="prettyPrint()"><span class="glyphicon glyphicon-align-center"></span> Pretty Print</button></div> -->
+        
+                                    <div class="col-md-12">&nbsp;</div>
+                                    <div class="col-md-4">Tests</div>
+        
+                                    <div class="col-md-8">
+                                        <table class="table table-responsive table-condensed">
+                                            <thead><tr><th>Name</th><th>Pass count</th><th>Fail count</th></tr></thead>
+                                            <tbody><tr><td>Test form data</td><td  class="tego-bg-green">1</td><td >0</td></tr></tbody>
+                                        </table>
+                                    </div><br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+  </div>
+</body>
+</html>
+

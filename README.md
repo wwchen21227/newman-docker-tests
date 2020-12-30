@@ -1,6 +1,6 @@
-# Newman docker tests for postman collections
+# Newman docker for running postman collections
 
-This repository is contained the boilerplate on how to run postman collections by using docker newman (postman cli).
+This repository contained the boilerplate on how to run postman collections by using docker newman (postman cli) and generate html report. 
 
 ## How to start
 There are two approaches of running the postman collections in this repo, 
@@ -12,10 +12,12 @@ There are two approaches of running the postman collections in this repo,
 2) Run ./build-image.sh to build newman docker image.
 3) Run ./run.sh after step 2 image build successfully.
 4) You will see a testReports.html in collections/reports if everyting working correctly.
+5) You can access the report http://localhost:8081/{reportFileName} e.g. http://localhost:8081/testReports.html
 
 ## Run using docker-compose
 1) Run docker-compose up
 2) You will see a testReports.html in collections/reports if everyting working correctly.
+3) You can access the report http://localhost:8081/{reportFileName} e.g. http://localhost:8081/testReports.html
 
 ## Configurations
 - postman-collection-file.json => Your postman collections json file
@@ -34,3 +36,4 @@ For more options, please refer to https://learning.postman.com/docs/running-coll
 
 ## Report Templates
 I also included 3 default report templates in collections/reports/templates, so that you can output your report into a custom report format.
+
